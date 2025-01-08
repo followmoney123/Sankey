@@ -28,22 +28,22 @@
 <meta name="twitter:creator" content="@nowthis" />
 </head>
 <body>
-<header class="header vs f-middle" style="display:none">
+<header class="header vs f-middle">
   <nav class="header__nav hs-sm-vs space-between">
-  <a href="/" title="SankeyMATIC home page" class="header__logo hs f-middle align-center"><img alt="SankeyMATIC logo" src="i/SKM-trsp-300.png" height="27" width="27" class="skm_logo_small" />&nbsp;Eurika</a>
-  <!-- <ul class="header__links hs f-middle">
+  <a href="/" title="SankeyMATIC home page" class="header__logo hs f-middle align-center"><img alt="SankeyMATIC logo" src="i/SKM-trsp-300.png" height="27" width="27" class="skm_logo_small" />&nbsp;SankeyMATIC</a>
+  <ul class="header__links hs f-middle">
     <li><a href="/news/" title="What's New with SankeyMATIC">News</a></li>
     <li><a href="/data/" title="Interesting Diagrams from the Real World">Data</a></li>
     <li><a href="/gallery/" title="Gallery of SankeyMATIC Examples">Gallery</a></li>
     <li><a href="/manual/" title="How to use SankeyMATIC to the fullest">Manual</a></li>
     <li><a href="/about/" title="About SankeyMATIC and how to support the site">About</a></li>
-  </ul> -->
+  </ul>
   </nav>
 </header>
-<!-- <div class="callout-container pad-small">If you find SankeyMATIC useful, please consider <a href="../about/" class="internal-link" title="(new window) About SankeyMATIC and how to support the site" target="_blank">donating to support further development</a>. Thanks!</div> -->
+<div class="callout-container pad-small">If you find SankeyMATIC useful, please consider <a href="../about/" class="internal-link" title="(new window) About SankeyMATIC and how to support the site" target="_blank">donating to support further development</a>. Thanks!</div>
 
 <main>
-<div id="example_diagrams" class="text_center" style="display:none">
+<div id="example_diagrams" class="text_center">
 <div class="hs-sm-vs f-middle gap-small">
 <h4>Sample Diagrams &amp; Starting Points:</h4>
 <div class="hs-md-vs gap-tiny">
@@ -74,7 +74,7 @@
 
 <div class="skm_grid">
 
-<div class="center diagram_controls" style="display: none;">
+<div class="center diagram_controls">
 
 <h2 class="ui_head" onclick="togglePanel('input_options');">
 <span id="input_options_indicator" class="indicator">&ndash;</span>
@@ -85,150 +85,14 @@ Inputs<span id="input_options_hint">:</span></h2>
     <textarea id="flows_in" title="Diagram Inputs" rows="19" cols="40" class="font_sans" onchange="process_sankey();" onkeyup="debounced_process_sankey();">// Enter Flows between Nodes, like this:
 //         Source [AMOUNT] Target
 
+Wages [1500] Budget
+Other [250] Budget
 
-WETH.total.coll[423.51]WETH.coll
-WETH.total.coll[1491.77]wstETH.coll
-WETH.total.coll[3952.72]weETH.coll
-WETH.total.coll[384.14]WBTC.coll
-WETH.total.coll[38.24]USDT.coll
-WETH.total.coll[70.17]USDC.coll
-WETH.total.coll[1.80]rsETH.coll
-WETH.total.coll[27.18]cbBTC.coll
-WETH.total.coll[123.56]USDS.coll
-WETH.total.coll[1.24]DAI.coll
-WETH.total.coll[0.00]USDe.coll
-WETH.total.coll[0.19]sUSDe.coll
-wstETH.total.coll[17.31]WETH.coll
-wstETH.total.coll[12.46]wstETH.coll
-wstETH.total.coll[111.72]weETH.coll
-wstETH.total.coll[21.93]WBTC.coll
-wstETH.total.coll[4.10]USDT.coll
-wstETH.total.coll[5.00]USDC.coll
-wstETH.total.coll[793.55]rsETH.coll
-wstETH.total.coll[0.12]cbBTC.coll
-wstETH.total.coll[0.10]USDS.coll
-wstETH.total.coll[0.24]DAI.coll
-wstETH.total.coll[0.00]USDe.coll
-wstETH.total.coll[0.04]sUSDe.coll
-weETH.total.coll[2.57]WETH.coll
-weETH.total.coll[5.36]wstETH.coll
-weETH.total.coll[6.92]weETH.coll
-weETH.total.coll[17.76]WBTC.coll
-weETH.total.coll[0.30]USDT.coll
-weETH.total.coll[2.21]USDC.coll
-weETH.total.coll[14.19]rsETH.coll
-weETH.total.coll[0.00]cbBTC.coll
-weETH.total.coll[0.00]USDS.coll
-weETH.total.coll[0.00]DAI.coll
-weETH.total.coll[0.00]USDe.coll
-weETH.total.coll[0.00]sUSDe.coll
-WBTC.total.coll[471.89]WETH.coll
-WBTC.total.coll[550.47]wstETH.coll
-WBTC.total.coll[10.46]weETH.coll
-WBTC.total.coll[99.44]WBTC.coll
-WBTC.total.coll[50.77]USDT.coll
-WBTC.total.coll[20.44]USDC.coll
-WBTC.total.coll[0.00]rsETH.coll
-WBTC.total.coll[30.42]cbBTC.coll
-WBTC.total.coll[2.52]USDS.coll
-WBTC.total.coll[2.48]DAI.coll
-WBTC.total.coll[0.00]USDe.coll
-WBTC.total.coll[92.03]sUSDe.coll
-USDT.total.coll[2614.60]WETH.coll
-USDT.total.coll[1270.30]wstETH.coll
-USDT.total.coll[214.31]weETH.coll
-USDT.total.coll[2650.40]WBTC.coll
-USDT.total.coll[214.31]USDT.coll
-USDT.total.coll[34.82]USDC.coll
-USDT.total.coll[18.25]rsETH.coll
-USDT.total.coll[190.03]cbBTC.coll
-USDT.total.coll[78.71]USDS.coll
-USDT.total.coll[0.21]DAI.coll
-USDT.total.coll[13.35]USDe.coll
-USDT.total.coll[884.49]sUSDe.coll
-USDC.total.coll[2202.13]WETH.coll
-USDC.total.coll[1504.46]wstETH.coll
-USDC.total.coll[160.13]weETH.coll
-USDC.total.coll[1956.20]WBTC.coll
-USDC.total.coll[13.22]USDT.coll
-USDC.total.coll[18.35]USDC.coll
-USDC.total.coll[5.51]rsETH.coll
-USDC.total.coll[608.93]cbBTC.coll
-USDC.total.coll[89.44]USDS.coll
-USDC.total.coll[0.30]DAI.coll
-USDC.total.coll[5.46]USDe.coll
-USDC.total.coll[907.55]sUSDe.coll
-rsETH.total.coll[0.09]WETH.coll
-rsETH.total.coll[0.00]wstETH.coll
-rsETH.total.coll[0.00]weETH.coll
-rsETH.total.coll[0.39]WBTC.coll
-rsETH.total.coll[0.00]USDT.coll
-rsETH.total.coll[0.00]USDC.coll
-rsETH.total.coll[0.00]rsETH.coll
-rsETH.total.coll[0.00]cbBTC.coll
-rsETH.total.coll[0.00]USDS.coll
-rsETH.total.coll[0.00]DAI.coll
-rsETH.total.coll[0.00]USDe.coll
-rsETH.total.coll[0.00]sUSDe.coll
-cbBTC.total.coll[9.43]WETH.coll
-cbBTC.total.coll[9.04]wstETH.coll
-cbBTC.total.coll[0.79]weETH.coll
-cbBTC.total.coll[19.95]WBTC.coll
-cbBTC.total.coll[1.36]USDT.coll
-cbBTC.total.coll[7.91]USDC.coll
-cbBTC.total.coll[0.00]rsETH.coll
-cbBTC.total.coll[2.21]cbBTC.coll
-cbBTC.total.coll[75.30]USDS.coll
-cbBTC.total.coll[0.03]DAI.coll
-cbBTC.total.coll[0.00]USDe.coll
-cbBTC.total.coll[4.30]sUSDe.coll
-USDS.total.coll[151.61]WETH.coll
-USDS.total.coll[7.46]wstETH.coll
-USDS.total.coll[3.65]weETH.coll
-USDS.total.coll[93.20]WBTC.coll
-USDS.total.coll[3.18]USDT.coll
-USDS.total.coll[0.60]USDC.coll
-USDS.total.coll[1.19]rsETH.coll
-USDS.total.coll[34.42]cbBTC.coll
-USDS.total.coll[36.80]USDS.coll
-USDS.total.coll[0.00]DAI.coll
-USDS.total.coll[0.00]USDe.coll
-USDS.total.coll[755.36]sUSDe.coll
-DAI.total.coll[404.60]WETH.coll
-DAI.total.coll[392.58]wstETH.coll
-DAI.total.coll[49.71]weETH.coll
-DAI.total.coll[427.33]WBTC.coll
-DAI.total.coll[0.24]USDT.coll
-DAI.total.coll[1.86]USDC.coll
-DAI.total.coll[0.00]rsETH.coll
-DAI.total.coll[17.35]cbBTC.coll
-DAI.total.coll[0.54]USDS.coll
-DAI.total.coll[0.32]DAI.coll
-DAI.total.coll[1.01]USDe.coll
-DAI.total.coll[5.57]sUSDe.coll
-USDe.total.coll[16.03]WETH.coll
-USDe.total.coll[9.61]wstETH.coll
-USDe.total.coll[0.17]weETH.coll
-USDe.total.coll[7.03]WBTC.coll
-USDe.total.coll[1.64]USDT.coll
-USDe.total.coll[9.15]USDC.coll
-USDe.total.coll[0.00]rsETH.coll
-USDe.total.coll[10.57]cbBTC.coll
-USDe.total.coll[88.09]USDS.coll
-USDe.total.coll[0.13]DAI.coll
-USDe.total.coll[0.04]USDe.coll
-USDe.total.coll[0.17]sUSDe.coll
-ETH.debt[4871.48]WETH.total.coll
-wstETH.debt[774.76]wstETH.total.coll
-weETH.debt[12.82]weETH.total.coll
-WBTC.debt[344.44]WBTC.total.coll
-USDT.debt[2380.47]USDT.total.coll
-USDC.debt[1955.34]USDC.total.coll
-rsETH.debt[0.04]rsETH.total.coll
-cbBTC.debt[23.83]cbBTC.total.coll
-USDS.debt[268.79]USDS.total.coll
-DAI.debt[169.51]DAI.total.coll
-USDe.debt[16.75]USDe.total.coll
+Budget [450] Taxes
+Budget [420] Housing
+Budget [400] Food
+Budget [255] Transportation
+
 // You can set a Node's color, like this:
 :Budget #057
 //            ...or a color for a single Flow:
@@ -651,7 +515,7 @@ Diagram Scales match as closely as possible.
 
 <div class="diagram_export">
 <!-- EXPORT -->
-<div class="expandable_box" style="display: none;">
+<div class="expandable_box">
 <p id="download_central" class="share-box">
 <strong class="padded-inline">Share:</strong>
 
@@ -682,11 +546,11 @@ Diagram Scales match as closely as possible.
   <section class="text_center">
     <div class="center_basic">
     <div class="warning-note">
-    <!-- <p class="text_left"><strong>Please note:</strong> If your diagram contains <strong>sensitive or private data</strong>, we recommend that you <em><strong>DO NOT USE</strong></em> this public-linking feature to save or share your work.</p> -->
+    <p class="text_left"><strong>Please note:</strong> If your diagram contains <strong>sensitive or private data</strong>, we recommend that you <em><strong>DO NOT USE</strong></em> this public-linking feature to save or share your work.</p>
 <details class="indented">
   <summary><em><u>Learn more...</u></em></summary>
-    <!-- <p class="text_left">Visiting the link below will potentially expose the data you have entered to <strong>any observer</strong> who can see your Internet traffic, up to and including the SankeyMATIC server itself (which, like all web servers, keeps a record of every visited link).</p>
-    <p class="text_left">Instead, you can use the &quot;<strong>Save my work</strong>&quot; and &quot;<strong>Load from file</strong>&quot; buttons to save &amp; reload a diagram in progress <em>without</em> sending a copy of your data beyond your own web browser.</p> -->
+    <p class="text_left">Visiting the link below will potentially expose the data you have entered to <strong>any observer</strong> who can see your Internet traffic, up to and including the SankeyMATIC server itself (which, like all web servers, keeps a record of every visited link).</p>
+    <p class="text_left">Instead, you can use the &quot;<strong>Save my work</strong>&quot; and &quot;<strong>Load from file</strong>&quot; buttons to save &amp; reload a diagram in progress <em>without</em> sending a copy of your data beyond your own web browser.</p>
     </details>
     </div>
     </div>
@@ -710,7 +574,7 @@ Diagram Scales match as closely as possible.
 
 <!-- SIZE & SPACING & BACKGROUND -->
 
-<div class="diagram_size expandable_box" style="display:none;">
+<div class="diagram_size expandable_box">
 <h2 class="ui_head" onclick="togglePanel('diagram_options');">
 <span id="diagram_options_indicator" class="indicator">&ndash;</span>
 Diagram Size &amp; Background<span id="diagram_options_hint">:</span></h2>
@@ -718,9 +582,9 @@ Diagram Size &amp; Background<span id="diagram_options_hint">:</span></h2>
 <div id="diagram_options" class="form_chunk">
 <p class="form_elements1">
 <span class="no_wrap"><label for="size_w" title="Diagram Width in pixels"><strong>Width:</strong></label>
-<input id="size_w" type="number" class="number_10000s" min="40" value="1200" step="2" onchange="process_sankey();"></span>
+<input id="size_w" type="number" class="number_10000s" min="40" value="600" step="2" onchange="process_sankey();"></span>
 <span class="no_wrap"><label for="size_h" class="spaced_label" title="Diagram Height in pixels"><strong>Height:</strong></label>
-<input id="size_h" type="number" class="number_10000s" min="40" value="800" step="2" onchange="process_sankey();"></span>
+<input id="size_h" type="number" class="number_10000s" min="40" value="600" step="2" onchange="process_sankey();"></span>
 
 <label for="bg_color" class="spaced_label"><strong>Background Color:</strong></label>
 <input type="color" id="bg_color" size="7" maxlength="7" value="#FFFFFF" onchange="process_sankey();">
@@ -747,7 +611,7 @@ Diagram Size &amp; Background<span id="diagram_options_hint">:</span></h2>
   <div id="info_messages"></div>
   <div id="issue_messages"></div>
 </div>
-<p id="reset_moves_area" class="form_elements1" style="display:none">
+<p id="reset_moves_area" class="form_elements1">
 Move Nodes by <em>dragging</em>. Double-click a Node to reset, or: <button type="button" id="reset_all_moved_nodes" onclick="resetMovesAndRender(); return false;">Reset all moved Nodes</button>
 </p>
 
@@ -756,28 +620,28 @@ Move Nodes by <em>dragging</em>. Double-click a Node to reset, or: <button type=
 <svg id="sankey_svg" height="600" width="600" xmlns="http://www.w3.org/2000/svg"></svg>
 </p>
 <canvas id="png_preview" height="600" width="600" style="background-color: transparent; display: none;"></canvas>
-<div id="chartfooter" style="background-color: transparent; display: none;">
+<div id="chartfooter">
 <p class="form_elements1 text_center">
-<input type="checkbox" id="meta_mentionsankeymatic" style="display: none;" value="1" onchange="process_sankey();">
+<input type="checkbox" id="meta_mentionsankeymatic" value="1" onchange="process_sankey();" checked>
 <label class="smalllabel ropt" for="meta_mentionsankeymatic">Include &ldquo;Made at SankeyMATIC.com&rdquo;</label>
 </p>
 </div>
 </div> <!-- diagram_main -->
 
-<div class="diagram_about"  style="display:none">
+<div class="diagram_about">
 <table id="messages" class="expandable_box">
 <tr><td>
-  <div id="messages_area" style="display:none">
+  <div id="messages_area">
     <h4>About this diagram</h4>
     <div id="totals_area"></div>
   </div>
-  <div id="console_area" style="display:none">
+  <div id="console_area" style="display: none;">
     <details><summary>Console</summary>
-      <div id="console_lines"  style="display:none"></div>
+      <div id="console_lines"></div>
     </details>
   </div>
 </td></tr>
-<tr><td id="imbalances_area" style="display:none">
+<tr><td id="imbalances_area">
 <div id="imbalance_control">
 <span class="underline"><strong><em>When Total Inputs &ne; Total Outputs:</em></strong></span><br>
 <p class="form_elements3">
@@ -803,6 +667,48 @@ Move Nodes by <em>dragging</em>. Double-click a Node to reset, or: <button type=
 <!-- ====================== Bottom Matter ====================== -->
 
 </main>
+
+<hr class="ad_divider" />
+<div class="ad_center">
+</div>
+
+<footer class="footer vs align-center reset-fonts">
+  <div class="callout-container pad-medium">
+  <span class="indented">If you find SankeyMATIC useful, please consider <a href="../about/" class="internal-link" title="(new window) About SankeyMATIC and how to support the site" target="_blank">donating to support further development</a>. Thanks!</span>
+  </div>
+  <div class="footer__inner hs-md-vs align-center space-around">
+    <div class="footer__content text_left">
+    <p>
+    Follow:
+  🦣&nbsp;<strong><a href="https://vis.social/@SankeyMATIC" title="(new window) SankeyMATIC's Mastodon account" target="_blank" rel="noopener me">@SankeyMATIC@vis.social</a></strong>
+    </p>
+    <p>
+    <strong>SankeyMATIC</strong> is produced by
+  <a href="http://nowthis.com/" title="(new window) Steve's personal site" target="_blank" rel="noopener">Steve Bogart</a>
+  <small>(🦣&nbsp;<a href="https://tilde.zone/@nowthis" title="(new window) Steve's Mastodon account" target="_blank" rel="noopener">@nowthis@tilde.zone</a>)</small>.
+    </p>
+    <p>
+  <small><a href="https://github.com/nowthis/sankeymatic" title="(new window) SankeyMATIC source code at GitHub" target="_blank" rel="noopener"><strong>Source code</strong> is available</a> at GitHub.<br>
+  SankeyMATIC builds on the open source tool <a href="http://d3js.org/" title="(new window) D3's home page" target="_blank" rel="noopener">D3.js</a><br />
+  &amp; a modified version of its <a href="https://github.com/d3/d3-sankey" title="(new window) The D3 Sankey plugin at GitHub" target="_blank" rel="noopener">Sankey plugin</a>.
+    </small>
+    </p>
+  <p><a href="/privacy/">Privacy Policy</a></p>
+    </div>
+
+    <div class="footer__nav">
+    <ul class="hs-sm-vs align-center">
+    <li><a title="SankeyMATIC home page" href="/">Home</a></li>
+    <li><a title="What's New with SankeyMATIC" href="/news/">News</a></li>
+    <li><a href="/data/" title="Interesting Diagrams from the Real World">Data</a></li>
+    <li><a title="Gallery of SankeyMATIC Examples" href="/gallery/">Gallery</a></li>
+    <li><a title="How to use SankeyMATIC to the fullest" href="/manual/">Manual</a></li>
+    <li><a title="About SankeyMATIC and how to support the site" href="/about/">About</a></li>
+    </ul>
+    </div>
+
+  </div>
+</footer>
 
 </body>
 </html>
